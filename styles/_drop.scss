@@ -1,0 +1,22 @@
+.search-drop {
+  &__header {
+    display: flex;
+  }
+
+  &__settings {
+
+  }
+}
+
+.search-drop {
+  color: #242424;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__settings {
+    color: #242424;
+  }
+}
