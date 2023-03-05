@@ -40,16 +40,20 @@
                 </li>
                 <li class="search-tabs__item">
                   <div class="settings-tab">
-                    <i class="material-symbols-outlined is-custom">attach_file</i>
-                    <span>Files</span>
-                    <div class="settings-tab__quantity">6</div>
+                    <div class="settings-tab__icon">
+                      <i class="material-symbols-outlined is-custom">attach_file</i>
+                    </div>
+                    <span class="settings-tab__title">Files</span>
+                    <div class="settings-tab__quantity">3</div>
                   </div>
                 </li>
                 <li class="search-tabs__item">
                   <div class="settings-tab">
-                    <i class="material-symbols-outlined">person</i>
-                    <span>People</span>
-                    <div class="settings-tab__quantity">3</div>
+                    <div class="settings-tab__icon">
+                      <i class="material-symbols-outlined">person</i>
+                    </div>
+                    <span class="settings-tab__title">People</span>
+                    <div class="settings-tab__quantity">6</div>
                 </div>
                 </li>
               </ul>
@@ -57,7 +61,7 @@
             </div>
 
             <div class="search-drop__settings">
-              <button class="btn btn--icon">
+              <button class="btn btn--icon" id="settings-trigger">
                 <i class="material-symbols-outlined">settings</i>
               </button>
             </div>
@@ -68,7 +72,7 @@
                 <li class="search-result__item">
                   <div class="search-item">
                     <div class="search-item__img">
-                      <img src="https://cs12.pikabu.ru/post_img/2022/09/29/11/1664480159119988849.jpg" alt="">
+                      <img src="/public/yo.jpg" alt="">
                       <div class="search-item__indicator search-item__indicator--unactive"></div>
                     </div>
                     <div class="search-item__content">
@@ -80,7 +84,7 @@
                 <li class="search-result__item">
                   <div class="search-item">
                     <div class="search-item__img">
-                      <img src="https://cloudstatic.eva.ru/eva/720000-730000/722554/channel/HHKmz8Z06gyUz7qc2BsnRK2wc5_23443282520724136.jpg" alt="">
+                      <img src="/public/anna.jpg" alt="">
                       <div class="search-item__indicator search-item__indicator--active"></div>
                     </div>
                     <div class="search-item__content">
@@ -92,7 +96,7 @@
                 <li class="search-result__item">
                   <div class="search-item">
                     <div class="search-item__img">
-                      <img src="https://anime-star.ru/wp-content/uploads/2021/09/Shaman-King-2021-Seriya-24-Data-vyhoda.jpeg" alt="">
+                      <img src="/public/hao.jpeg" alt="">
                       <div class="search-item__indicator search-item__indicator--online"></div>
                     </div>
                     <div class="search-item__content">
@@ -104,7 +108,7 @@
                 <li class="search-result__item">
                   <div class="search-item">
                     <div class="search-item__img">
-                      <img src="https://rare-gallery.com/mocahbig/396363-wallpaper-shaman-king-2021-amidamaru-spirit-ball.jpg" alt="">
+                      <img src="/public/amidamaru.jpg" alt="">
                       <div class="search-item__indicator"></div>
                     </div>
                     <div class="search-item__content">
@@ -116,7 +120,7 @@
                 <li class="search-result__item">
                   <div class="search-item">
                     <div class="search-item__img">
-                      <img src="https://avatars.dzeninfra.ru/get-zen_doc/1712062/pub_5eb2ef564a86b34acfd5e4e3_5eb39a206451301d9a365468/scale_1200" alt="">
+                      <img src="/public/morty.jpg" alt="">
                       <div class="search-item__indicator search-item__indicator--unactive"></div>
                     </div>
                     <div class="search-item__content">
@@ -128,11 +132,11 @@
                 <li class="search-result__item">
                   <div class="search-item">
                     <div class="search-item__img">
-                      <img src="https://rare-gallery.com/mocahbig/396363-wallpaper-shaman-king-2021-amidamaru-spirit-ball.jpg" alt="">
+                      <img src="/public/lyserg.jpg" alt="">
                       <div class="search-item__indicator search-item__indicator--active"></div>
                     </div>
                     <div class="search-item__content">
-                      <div class="search-item__title">Amidamaru</div>
+                      <div class="search-item__title">Lyserg Diethel</div>
                       <div class="search-item__status">Unactivated</div>
                     </div>
                   </div>
@@ -144,7 +148,7 @@
 
       </div>
 
-      <div class="settings" style="margin-top: 40px;">
+      <div class="settings" style="margin-top: 40px;" id="settings-popover">
         <div class="settings__content">
           <ul class="settings__list">
             <li class="settings__list-option">
