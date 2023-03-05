@@ -1,22 +1,24 @@
 .search-drop {
-  &__header {
-    display: flex;
-  }
-
-  &__settings {
-
-  }
-}
-
-.search-drop {
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease height;
   color: #242424;
 
   &__header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid secondary(1);
+    padding: 3px 17px 5px 17px;    
   }
 
   &__settings {
     color: #242424;
+  }
+
+  &.is-focus {
+    // max-height: 390px;
+    height: 100%;
+    overflow: hidden;
+    // padding: 0 0 20px 0;
   }
 }

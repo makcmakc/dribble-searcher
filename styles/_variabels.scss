@@ -1,0 +1,61 @@
+@use 'sass:math';
+
+$gray0: #F7F7F7;
+$gray: #EAEAEA;
+$gray2: #9C9C9C;
+$gray3: #676767;
+
+//  Base Colors Palette
+//-------------------------------------------------------
+$black: #262b33;
+$white: #ffffff;
+
+// $primary: (
+//   0: #3564ac,
+//   1: #6492cb,
+//   2: #88b4e4,
+//   3: #b3d5f5,
+//   4: #d9ebf9,
+//   5: #edf7ff,
+// );
+
+// @function primary($index) {
+//   @return map-get($primary, $index);
+// }
+
+$secondary: (
+  0: #F7F7F7,
+  1: #EAEAEA,
+  2: #9C9C9C,
+  3: #676767,
+);
+
+@function secondary($index) {
+  @return map-get($secondary, $index);
+}
+
+$success: (
+  0: #3CCA0B,
+);
+
+@function success($index) {
+  @return map-get($success, $index);
+}
+
+$info: (
+  0: #FAC300,
+  1: #F28623
+);
+
+@function info($index) {
+  @return map-get($info, $index);
+}
+
+$danger: (
+  0: #e3525b,
+  1: #D92014,
+);
+
+@function danger($index) {
+  @return map-get($danger, $index);
+}

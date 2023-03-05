@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <title>Vite App</title>
   </head>
   <body>
@@ -73,7 +69,7 @@
                   <div class="search-item">
                     <div class="search-item__img">
                       <img src="https://cs12.pikabu.ru/post_img/2022/09/29/11/1664480159119988849.jpg" alt="">
-                      <div class="search-item__indicator"></div>
+                      <div class="search-item__indicator search-item__indicator--unactive"></div>
                     </div>
                     <div class="search-item__content">
                       <div class="search-item__title">Yo Asakura</div>
@@ -85,11 +81,11 @@
                   <div class="search-item">
                     <div class="search-item__img">
                       <img src="https://cloudstatic.eva.ru/eva/720000-730000/722554/channel/HHKmz8Z06gyUz7qc2BsnRK2wc5_23443282520724136.jpg" alt="">
-                      <div class="search-item__indicator"></div>
+                      <div class="search-item__indicator search-item__indicator--active"></div>
                     </div>
                     <div class="search-item__content">
                       <div class="search-item__title">Anna Asakura</div>
-                      <div class="search-item__status">Unactivated</div>
+                      <div class="search-item__status">Active</div>
                     </div>
                   </div>
                 </li>
@@ -97,7 +93,7 @@
                   <div class="search-item">
                     <div class="search-item__img">
                       <img src="https://anime-star.ru/wp-content/uploads/2021/09/Shaman-King-2021-Seriya-24-Data-vyhoda.jpeg" alt="">
-                      <div class="search-item__indicator"></div>
+                      <div class="search-item__indicator search-item__indicator--online"></div>
                     </div>
                     <div class="search-item__content">
                       <div class="search-item__title">Hao Asakura</div>
@@ -120,11 +116,11 @@
                 <li class="search-result__item">
                   <div class="search-item">
                     <div class="search-item__img">
-                      <img src="https://anime-star.ru/wp-content/uploads/2021/09/Shaman-King-2021-Seriya-24-Data-vyhoda.jpeg" alt="">
-                      <div class="search-item__indicator"></div>
+                      <img src="https://avatars.dzeninfra.ru/get-zen_doc/1712062/pub_5eb2ef564a86b34acfd5e4e3_5eb39a206451301d9a365468/scale_1200" alt="">
+                      <div class="search-item__indicator search-item__indicator--unactive"></div>
                     </div>
                     <div class="search-item__content">
-                      <div class="search-item__title">Hao Asakura</div>
+                      <div class="search-item__title">Manta Oyamada</div>
                       <div class="search-item__status">Unactivated</div>
                     </div>
                   </div>
@@ -133,7 +129,7 @@
                   <div class="search-item">
                     <div class="search-item__img">
                       <img src="https://rare-gallery.com/mocahbig/396363-wallpaper-shaman-king-2021-amidamaru-spirit-ball.jpg" alt="">
-                      <div class="search-item__indicator"></div>
+                      <div class="search-item__indicator search-item__indicator--active"></div>
                     </div>
                     <div class="search-item__content">
                       <div class="search-item__title">Amidamaru</div>
@@ -152,10 +148,25 @@
         <div class="settings__content">
           <ul class="settings__list">
             <li class="settings__list-option">
-              <div class="settings-option">
+              <div class="settings-option is-active">
                 <div class="settings-option__item">
-                  <i class="material-symbols-outlined is-custom">attach_file</i>
-                  <span>Files</span>
+                  <div class="settings-option__item-icon">
+                    <i class="material-symbols-outlined is-custom">attach_file</i>
+                  </div>
+                  <div class="settings-option__item-title">Files</div>
+                </div>
+                <div class="settings-option__toggle">
+                  <input type="checkbox" class="toggle" checked>
+                </div>
+              </div>
+            </li>
+            <li class="settings__list-option">
+              <div class="settings-option is-active">
+                <div class="settings-option__item">
+                  <div class="settings-option__item-icon">
+                    <i class="material-symbols-outlined">person</i>
+                  </div>
+                  <div class="settings-option__item-title">People</div>
                 </div>
                 <div class="settings-option__toggle">
                   <input type="checkbox" class="toggle" checked>
@@ -165,19 +176,10 @@
             <li class="settings__list-option">
               <div class="settings-option">
                 <div class="settings-option__item">
-                  <i class="material-symbols-outlined">person</i>
-                  <span>People</span>
-                </div>
-                <div class="settings-option__toggle">
-                  <input type="checkbox" class="toggle" checked>
-                </div>
-              </div>
-            </li>
-            <li class="settings__list-option">
-              <div class="settings-option">
-                <div class="settings-option__item">
-                  <i><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa=""><path fill="currentColor" d="m174.72 855.68 130.048-43.392 23.424 11.392C382.4 849.984 444.352 864 512 864c223.744 0 384-159.872 384-352 0-192.832-159.104-352-384-352S128 319.168 128 512a341.12 341.12 0 0 0 69.248 204.288l21.632 28.8-44.16 110.528zm-45.248 82.56A32 32 0 0 1 89.6 896l56.512-141.248A405.12 405.12 0 0 1 64 512C64 299.904 235.648 96 512 96s448 203.904 448 416-173.44 416-448 416c-79.68 0-150.848-17.152-211.712-46.72l-170.88 56.96z"></path></svg></i>
-                  <span>Chats</span>
+                  <div class="settings-option__item-icon">
+                    <svg viewBox="0 0 1024 1024" width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" data-v-029747aa=""><path fill="currentColor" d="m174.72 855.68 130.048-43.392 23.424 11.392C382.4 849.984 444.352 864 512 864c223.744 0 384-159.872 384-352 0-192.832-159.104-352-384-352S128 319.168 128 512a341.12 341.12 0 0 0 69.248 204.288l21.632 28.8-44.16 110.528zm-45.248 82.56A32 32 0 0 1 89.6 896l56.512-141.248A405.12 405.12 0 0 1 64 512C64 299.904 235.648 96 512 96s448 203.904 448 416-173.44 416-448 416c-79.68 0-150.848-17.152-211.712-46.72l-170.88 56.96z"></path></svg>
+                  </div>
+                  <div class="settings-option__item-title">Chats</div>
                 </div>
                 <div class="settings-option__toggle">
                   <input type="checkbox" class="toggle">
@@ -187,8 +189,10 @@
             <li class="settings__list-option">
               <div class="settings-option">
                 <div class="settings-option__item">
-                  <i class="material-symbols-outlined">list</i>
-                  <span>Lists</span>
+                  <div class="settings-option__item-icon">
+                    <i class="material-symbols-outlined">list</i>
+                  </div>
+                  <div class="settings-option__item-title">Lists</div>
                 </div>
                 <div class="settings-option__toggle">
                   <input type="checkbox" class="toggle">

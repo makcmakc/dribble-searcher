@@ -30,12 +30,13 @@
 
   &__item {
     display: flex;
-    color: $gray2;
+    color: secondary(3);
     font-size: 14px;
-    font-weight: 600;
+   
 
     &.is-active {
-      // border-bottom: 2px solid #000;
+      font-weight: 600;
+      color: #000;
     }
 
     i {
