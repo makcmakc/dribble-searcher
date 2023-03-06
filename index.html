@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
 
     <div class="wrapper">
 
@@ -34,7 +32,7 @@
               <ul class="search-tabs__list">
                 <li class="search-tabs__item is-active">
                   <div class="settings-tab">
-                    <span>All</span>
+                    <span class="settings-tab__title">All</span>
                     <div class="settings-tab__quantity">9</div>
                   </div>
                 </li>
@@ -54,14 +52,32 @@
                     </div>
                     <span class="settings-tab__title">People</span>
                     <div class="settings-tab__quantity">6</div>
-                </div>
+                  </div>
                 </li>
+                <!-- <li class="search-tabs__item">
+                  <div class="settings-tab">
+                    <div class="settings-tab__icon">
+                      <svg viewBox="0 0 1024 1024" width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" data-v-029747aa=""><path fill="currentColor" d="m174.72 855.68 130.048-43.392 23.424 11.392C382.4 849.984 444.352 864 512 864c223.744 0 384-159.872 384-352 0-192.832-159.104-352-384-352S128 319.168 128 512a341.12 341.12 0 0 0 69.248 204.288l21.632 28.8-44.16 110.528zm-45.248 82.56A32 32 0 0 1 89.6 896l56.512-141.248A405.12 405.12 0 0 1 64 512C64 299.904 235.648 96 512 96s448 203.904 448 416-173.44 416-448 416c-79.68 0-150.848-17.152-211.712-46.72l-170.88 56.96z"></path></svg>
+                    </div>
+                    <span class="settings-tab__title">Chats</span>
+                    <div class="settings-tab__quantity">1</div>
+                  </div>
+                </li> -->
+                <!-- <li class="search-tabs__item">
+                  <div class="settings-tab">
+                    <div class="settings-tab__icon">
+                      <i class="material-symbols-outlined">list</i>
+                    </div>
+                    <span class="settings-tab__title">Lists</span>
+                    <div class="settings-tab__quantity">1</div>
+                  </div>
+                </li>                                 -->
               </ul>
               <div class="search-tabs__marker"></div>
             </div>
 
             <div class="search-drop__settings">
-              <button class="btn btn--icon" id="settings-trigger">
+              <button class="settings__btn" id="settings-trigger" data-popover-trigger>
                 <i class="material-symbols-outlined">settings</i>
               </button>
             </div>
@@ -148,7 +164,7 @@
 
       </div>
 
-      <div class="settings" style="margin-top: 40px;" id="settings-popover">
+      <div class="settings" id="settings-popover">
         <div class="settings__content">
           <ul class="settings__list">
             <li class="settings__list-option">
@@ -160,7 +176,7 @@
                   <div class="settings-option__item-title">Files</div>
                 </div>
                 <div class="settings-option__toggle">
-                  <input type="checkbox" class="toggle" checked>
+                  <input type="checkbox" class="toggle" id="files" checked>
                 </div>
               </div>
             </li>
@@ -173,7 +189,7 @@
                   <div class="settings-option__item-title">People</div>
                 </div>
                 <div class="settings-option__toggle">
-                  <input type="checkbox" class="toggle" checked>
+                  <input type="checkbox" class="toggle" id="person" checked>
                 </div>
               </div>
             </li>
@@ -186,7 +202,7 @@
                   <div class="settings-option__item-title">Chats</div>
                 </div>
                 <div class="settings-option__toggle">
-                  <input type="checkbox" class="toggle">
+                  <input type="checkbox" class="toggle" id="charts">
                 </div>
               </div>
             </li>
@@ -199,7 +215,7 @@
                   <div class="settings-option__item-title">Lists</div>
                 </div>
                 <div class="settings-option__toggle">
-                  <input type="checkbox" class="toggle">
+                  <input type="checkbox" class="toggle" id="lists">
                 </div>
               </div>
             </li>
